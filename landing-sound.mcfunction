@@ -1,0 +1,3 @@
+execute as snowiyam at @s unless entity @e[type=minecraft:area_effect_cloud,tag=1.8landingA] if block ~ ~-2 ~ air run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:1200,Tags:["1.8landingA"]}
+execute as snowiyam at @s if entity @e[type=minecraft:area_effect_cloud,tag=1.8landingA] unless block ~ ~-0.1 ~ air run playsound block.anvil.place master @a ^ ^ ^ 0.5
+  kill @e[type=minecraft:area_effect_cloud,tag=1.8landingA]
